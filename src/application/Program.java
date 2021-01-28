@@ -33,8 +33,8 @@ public class Program {
             list.stream()
                     .filter(x -> x.getSalary() > salary)
                     .sorted(Comparator.comparing(Employee::getEmail))
-                    .map(Employee::getEmail).
-                    forEach(System.out::println);
+                    .map(Employee::getEmail)
+                    .forEach(System.out::println);
 
             double sum = list.stream()
                     .filter(x -> x.getName().startsWith("M"))
